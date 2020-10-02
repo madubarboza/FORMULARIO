@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FORMULARIO 1 </title>
+</head>
+<body>
+<form>
+ 	<fieldset id="dados-pessoais">
+ 		<legend>Dados pessoais </legend>
+		<label for="nome">NOME:</label><br>
+		<input type="text" name="nome" id="nome" required placeholder="Digite seu nome ">
+		<br>// colocar o seu nome 
+
+		<label for=" email">E-mail:</label><br>
+		<input type="text " name="email" id="email" required placeholder="Digite seu email">
+		<br>// colocar seu email s
+
+		<label for="nasc" >Data de nascimento</label><br>
+		<input type="date" name="nasc" id="nasc" min="1900-01-01" max="2002-12-31" required placeholder="Digite sua data de nascimento">
+		<br>
+		<br>
+
+		<label for="sexo ">Escolha o sexo </label><br>
+		<input type="radio" name="sexo" value="m">Masculino<br>
+		<input type="radio" name="sexo" value="f">Feminino<br>
+		<br>
+		</fieldset>
+
+	<fieldset id="end">
+		<legend> Endereço</legend>
+		<label for="end" > Endereço:</label><br>
+		<input type="end" name="end" required placeholder =" Endereço">
+		<br>
+
+		<label for="numero">Numero:</label><br>
+		<input type="numero" name="numero" required placeholder="Numero">
+		<br>
+
+		<label for="bairro">Bairro</label><br>
+		<input type="bairro" name="bairro" required placeholder="digite seu bairro">
+		<br>
+
+		<label for="cep">CEP:</label><br>
+		<input type="cep" name="cep" required placeholder="Ex:00000-000"><br>
+
+		<label for="cidade">Cidade </label><br>
+		<select name="cidade" id="cidade">
+			<option value="1">Santos</option>
+			<option value="2">São Vicente</option>
+			<option value="3"> Praia grande</option>
+			<option value="4">Mongaguá</option>
+			<option value="5">Itanhaem</option>
+			<option value="6">Peruibe</option>
+			<option value="7">Itariri</option>
+			<option value="8"> Pedro de Toledo</option>
+		</select>
+
+	</fieldset>
+
+	<fieldset id="interesses">
+		<legend>Interesses</legend>
+		<label for="Interesses">Seus interesses </label>
+		<p>marque quantos julgar necessario</p>
+		<input type="checkbox" name="interesses[]" value="Musica">Musica<br>
+		<input type="checkbox" name="interesses[]" value=" filmes">Filmes<br>
+		<input type="checkbox" name="interesses[]" value="series">Serie<br>
+		<input type="checkbox" name="interesses[]" value="livros">Livros<br>
+		<input type="checkbox" name="interesses[]" value="viagens">Viagens<br>
+		<input type="checkbox" name="interesses[]" value="gastronomia">Gastronomia<br>
+		<input type="checkbox" name="interesses[]" value="tecnologia">Tecnologia<br>
+		<input type="checkbox" name="interesses[]" value="m_artistico">Movimentos Artiticos<br>
+		<input type="checkbox" name="interesses[]" value="decoracao">Decoração<br>
+		<input type="checkbox" name="interesses[]" value="celebriddes">Celebridades<br>
+		<input type="checkbox" name="interesses[]" value="signos">Signos<br>
+	</fieldset>
+
+<button>Cadastrar</button>
+<style>
+	body{
+		background-color:#6495ed
+
+ 		}
+ 		
+ 		fieldset{
+ 			width: 50%;
+ 	
+ 		}
+
+	 		#dados-pessoais{
+	 			background-color:#ffdab9
+	 		}
+
+	 		#end{
+	 			background-color: #ffe4b5
+	 		}
+
+	 		#interesses{
+	 			background-color: #eee8aa
+	 		}
+ 		input{
+ 			margin-bottom: 13px;
+
+ 		}
+</style>
+</form>
+</body>
+</html>
